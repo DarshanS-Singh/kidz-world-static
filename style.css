@@ -1,178 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
+.kidzworld{
+    display: flex;
+    justify-content: flex-start;
 }
-
-body {
-  font-family: "Rubik", sans-serif;
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
-
-.books {
-  max-width: 200px;
+.header{
+    background-image: url("https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/kw-background.png?raw=true");
+    background-size: 100%;
+    color: white;
+    height: 500px;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 70px;
 }
-
-.games,
-.crafts {
-  max-width: 300px;
+.font{
+    font-size: 80px;
+    font-weight: 400;
 }
-
-.flex {
-  display: flex;
+.new{
+    font-size: 25px;
 }
-
-.section-container {
-  flex-direction: column;
-  padding: 5%;
+.cart{
+    display: flex;
+    justify-content:end;
+    align-items: end;
 }
-
-.space-between {
-  justify-content: space-between;
-  align-items: center;
+.books, .games, .handmade{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
 }
-
-.space-evenly {
-  justify-content: space-evenly;
+.images{
+    display: flex;
+    flex-direction: row;
 }
-
-nav {
-  height: 50px;
-  width: 100%;
+.book{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
 }
-
-nav>div {
-  padding: 0% 5%;
+.price{
+    display: flex;
+    justify-content: space-between;
 }
-
-nav img {
-  height: 30px;
+.btn{
+    background-color: rgb(74, 148, 231);
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    padding: 7px;
 }
+.kri{
+    border-radius: 100%;
 
-#cart {
-  font-weight: bold;
-  align-items: center;
 }
-
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
-  background-size: 100% 100%;
-  color: white;
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 15px;
 }
-
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
+.right{
+    position: relative;
+    top: 50px;
+    margin-bottom: 10px;
 }
-
-header h1 {
-  font-size: 7vh;
+.right, .left{
+    margin: 30px;
 }
-
-header h5 {
-  font-size: 23px;
-  margin-top: 20px;
+.books{
+    margin-top: 40px;
 }
-
-.section {
-  margin: 4% 0%;
+.games, .handmade{
+    margin-top: 110px;
 }
-
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
+footer{
+    margin-top: 140px;
 }
-
-.buy img {
-  width: 20px;
-  padding-left: 5px;
+.krishti{
+    text-align: end;
+    padding: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.buy {
-  margin-top: 15px;
-  padding-bottom: 50px;
+.krishti1{
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-footer {
-  /* max-height: 300px; */
-  background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
-  background-size: 100% 100%;
-  color: white;
-  padding: 0% 5%;
+.left{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
 }
-
-footer img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+.left1{
+    padding: 5px;
 }
-
-#details {
-  flex-direction: column;
-  text-align: right;
+.name{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
-
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+.info{
+    color: gray;
+    font-size: 20px;
 }
-
-h4 {
-  color: grey;
-  font-weight: lighter;
+.price-div{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-h6 {
-  font-size: 17px;
-}
-
-.buy p {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-h3,
-h2 {
-  margin-bottom: 10px;
-}
-
-.container {
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    height: 200px;
-    font-size: 15px;
-    text-align: start;
-  }
-
-  header h1 {
-    font-size: 4vh;
-  }
-
-  header h5 {
-    font-size: 15px;
-  }
-
-  .header-text {
-    padding: 0% 60% 5% 5%;
-  }
-
-  body {
-    text-align: center;
-  }
-
-  .container {
-    justify-content: center;
-  }
-}
-

@@ -1,272 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kidz World</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <!-- Navigation bar -->
-    <nav class="flex space-between">
-      <div>
-        <img src="./assets/kw-logo.png" alt="" />
-      </div>
-      <div id="cart" class="flex">
-        <img src="./assets/cart-icon.png" alt="" />
-        <p>Cart items (<span id="cart-value">0</span>)</p>
-      </div>
-    </nav>
-    <!-- Header section -->
-    <header>
-      <div class="flex header-text">
-        <h1>Shop.</h1>
-        <h1>Have Fun.</h1>
-        <h1>Repeat.</h1>
-        <h5>#NewAndNow</h5>
-      </div>
-    </header>
-    <!-- Books section -->
-    <div class="section-container flex">
-      <div class="section">
-        <h2>Discover New Books</h2>
-        <div class="container flex space-between">
-          <div>
-            <div>
-              <img class="books" src="./assets/book1.png" alt="" />
-              <h3>This was our pact</h3>
-              <h4>Ryan Andrews</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$7.49</p>
-              <div id="book1" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img
-                class="books"
-                src="http://i1.faceprep.in/prograd-junior/book2.png"
-                alt=""
-              />
-              <h3>The famous five</h3>
-              <h4>Guid Blyton</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$4.59</p>
-              <div id="book2" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="books" src="./assets/book3.png" alt="" />
-              <h3>Matlida</h3>
-              <h4>Roald Dahl</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$6.80</p>
-              <div id="book3" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img
-                class="books"
-                src="http://i1.faceprep.in/prograd-junior/book4.png"
-                alt=""
-              />
-              <h3>Harry Potter</h3>
-              <h4>JK Rowling</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$10</p>
-              <div id="book4" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="books" src="./assets/book5.png" alt="" />
-              <h3>For Young Readers</h3>
-              <h4>Ruskin Bond</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$7.29</p>
-              <div id="book5" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="books" src="./assets/book6.png" alt="" />
-              <h3>Wimpy Kid - DIY</h3>
-              <h4>Jeff Kinney</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$4.99</p>
-              <div id="book6" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="kidzworld"><h2>KIDZ WORLD</h2></div>
+        <div id="cart" class="cart">
+            <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon.png?raw=true" width="50px" height="30px" alt="">
+            <b><strong>Cart Items (<span id="values">0</span>)</strong></b>
         </div>
-      </div>
-
-      <!-- game section -->
-      <div class="section">
-        <h2>Discover New Games</h2>
-        <div class="container flex space-between">
-          <div>
-            <div>
-              <img class="games" src="./assets/dart-board.png" alt="" />
-              <h3>Dart Board</h3>
-              <h4>Wooden board, 16 inches</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$17.49</p>
-              <div id="game1" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="games" src="./assets/connect-four.png" alt="" />
-              <h3>Connect 4</h3>
-              <h4>Board game, multiplayer</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$19.99</p>
-              <div id="game2" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="games" src="./assets/jenga.png" alt="" />
-              <h3>Jenga</h3>
-              <h4>Wooden blocks, 54 pieces</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$20.99</p>
-              <div id="game3" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="games" src="./assets/monopoly.png" alt="" />
-              <h3>Monopoly</h3>
-              <h4>1.61 x 15.75 x 10.51 inches</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$19.49</p>
-              <div id="game4" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Craft section -->
-      <div class="section">
-        <h2>Handmade with love</h2>
-        <div class="container flex space-between">
-          <div>
-            <div>
-              <img class="crafts" src="./assets/bookmarks.png" alt="" />
-              <h3>Bookmarks</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$12.49</p>
-              <div id="craft1" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="crafts" src="./assets/birthday-card.png" alt="" />
-              <h3>Birthday card</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$19.99</p>
-              <div id="craft2" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="crafts" src="./assets/stuffed-toy.png" alt="" />
-              <h3>Stuffed toys</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$15.99</p>
-              <div id="craft3" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="crafts" src="./assets/dream-catcher.png" alt="" />
-              <h3>Dream catcher drawing</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$18.49</p>
-              <div id="craft4" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <!-- Footer section -->
-    <footer class="flex space-between">
-      <div>
-        <h2>Brought to you by</h2>
-        <img src="./assets/krishti.png" alt="" />
-      </div>
-      <div class="flex" id="details">
-        <h3>Krishti</h3>
-        <p>Made with love ♥️ by Kalvian</p>
-        <p>Talk to me at kristi@gmail.com</p>
-      </div>
-    </footer>
-
-    <script src="./app.js"></script>
-  </body>
+    <div class="header">
+       <b> <div class="font">Shop.</div>
+        <div class="font">Have Fun.</div>
+        <div class="font">Repeat.</div>
+        <br>
+        <div class="new">#NewAndNow</div></b>
+    </div>
+    <div class="body">
+        <div class="books">
+            <div><b>Discover New Books</b></div>
+        </div>
+        <div class="images">
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book1.png?raw=true" width="200px" height="300px"></div>
+                    
+                <div class="name">This was our pact</div>
+                <br>
+                <div class="info">Ryan Andrews</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">7.49</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book2.png?raw=true" width="200px" height="300px"></div>
+                
+                <div class="name">The famous five</div>
+                <br>
+                <div class="info">Guid Blyton</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">4.59</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book3.png?raw=true" width="200px" height="300px"></div>
+                
+                <div class="name">Matilda</div>
+                <br>
+                <div class="info">Roald Dahl</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">6.80</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book4.png?raw=true" width="200px" height="300px"></div>
+                <div class="name">Harry Potter</div>
+                <br>
+                <div class="info">JK Rowling</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">10</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book5.png?raw=true" width="200px" height="300px"></div>
+                <div class="name">For Young Readers</div>
+                <br>
+                <div class="info">Ruskin Bond</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">7.29</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book6.png?raw=true" width="200px" height="300px"></div>
+                
+                <div class="name">Wimpy Kid-DIY</div>
+                <br>
+                <div class="info">Jeff Kinney</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">4.99</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="games">
+            <b>Discover New Games</b>
+        </div>
+        <div class="images">
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/dart-board.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Dart Board</div>
+                <br>
+                <div class="info">Wooden board, 16 inches</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">17.49</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/connect-four.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Connect 4</div>
+                <br>
+                <div class="info">Board game, multiplayer</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">19.99</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/jenga.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Jenga</div>
+                <br>
+                <div class="info">Wooden blocks, 54 pieces</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">20.99</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/monopoly.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Monopoly</div>
+                <br>
+                <div class="info">1.61 x 15.75 x 10.51 inches</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">19.49</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="handmade">
+            <b>Handmade with love</b>
+        </div>
+        <div class="images">
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/bookmarks.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Bookmarks</div>
+                <br>
+                <div class="info">Handmade with love</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">12.49</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/birthday-card.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Birthday card</div>
+                <br>
+                <div class="info">Handmade with love</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">19.99</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/stuffed-toy.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Stuffed toys</div>
+                <br>
+                <div class="info">Handmade with love</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">15.99</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="book">
+                <div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/dream-catcher.png?raw=true" width="300px" height="300px" alt=""></div>
+                <div class="name">Dream catcher drawing</div>
+                <br>
+                <div class="info">Handmade with love</div>
+                <br>
+                <div class="price">
+                    <div class="price-div">$<span class="price1">18.49</span></div>
+                    <div>
+                        <button class="btn">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" height="15px"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="left">
+                <div class="left1">Brought to you by</div>
+                <div class="left1"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/krishti.png?raw=true" class="kri" width="150px" height="150px" alt=""></div>
+            </div>
+            <div class="right">
+                <div class="krishti">Krishti</div>
+                <div class="krishti1">Made with love ❤️ by Kalvian  <br>  Talk to me at kristi@gmail.com </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
